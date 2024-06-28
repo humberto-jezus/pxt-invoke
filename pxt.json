@@ -1,0 +1,43 @@
+{
+    "name": "pxt-invoke",
+    "description": "",
+    "dependencies": {
+        "core": "*",
+        "gjgfnm": "pkg:gjgfnm.json"
+    },
+    "files": [
+        "main.ts",
+        "README.md",
+        "motor.ts",
+        "hcsr04.ts",
+        "linesensor.ts",
+        "humiditysensor.ts",
+        "colorsensor.ts",
+        "display.ts",
+        "watersensor.ts",
+        "main.py",
+        "gjgfnm.json"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "target": "6.0.28",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj",
+    "yotta": {
+        "config": {
+            "microbit-dal": {
+                "bluetooth": {
+                    "open": 0,
+                    "whitelist": 1,
+                    "security_level": "SECURITY_MODE_ENCRYPTION_NO_MITM"
+                }
+            }
+        }
+    }
+}
